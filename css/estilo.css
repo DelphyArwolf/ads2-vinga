@@ -60,4 +60,5 @@ a:visited{
     background-image: url(../img/banner.jpg);
     height: 300px;
     background-size: cover;
+    background-position: center;
 }
