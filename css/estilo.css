@@ -17,3 +17,14 @@ body{
     /* Definir o alinhamento de texto */
     text-align: center;
 }
+
+.start{
+    /* Define a largura minima  */
+    min-width: 400px;
+    /* Define a largura maxima */
+    max-width: 1200px;
+    /* Cor de fundo */
+    background-color: rgb(54, 52, 52);
+    /* Cetraliza container  */
+    margin: 0 auto;
+}
