@@ -43,3 +43,21 @@ a.logo{
 a.logo>img{
     width: 100%;
 }
+
+li{
+    list-style-type: none;
+     /* list-style-position: inside */
+}
+
+a:link,
+a:visited{
+    color: #ebebeb;
+    text-decoration: none;
+}
+
+.banner{
+    /* Define uma imagem de fundo  ( ../ faz voltar para selecionar pastas anteriores ) */
+    background-image: url(../img/banner.jpg);
+    height: 300px;
+    background-size: cover;
+}
