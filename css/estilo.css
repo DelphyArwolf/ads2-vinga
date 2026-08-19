@@ -1,0 +1,19 @@
+/* Selecionar todos os elementos do html  */
+*{
+    /* zerar os espaçamentos dos elementos */
+    margin: 0;
+    padding: 0;
+    /* Considerar a borda ao definir altura e largura */
+    box-sizing: border-box;
+}
+
+body{
+    /* Definir uma familia padrão de fonte */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* Define o tamanha padrão da fonte */
+    font-size: 16px;
+    /* Define cor de texto */
+    color: #333;
+    /* Definir o alinhamento de texto */
+    text-align: center;
+}
