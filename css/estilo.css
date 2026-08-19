@@ -28,3 +28,15 @@ body{
     /* Cetraliza container  */
     margin: 0 auto;
 }
+
+header{
+    background-color: #df3a3a59;
+
+}
+
+a.logo{
+    /* permite que o elemento tanha altura e largura */
+    display: inline-block;
+    width: 150px;
+}
+
