@@ -3,58 +3,314 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fan-page oficial dos Vingadores (Avengers) com galeria em alta definição, notícias exclusivas, vídeos e informações sobre o Universo Marvel.">
+    <meta property="og:title" content="Vingadores | Galeria & Universo Marvel">
+    <meta property="og:description" content="Explore a galeria épica dos Vingadores, as escolhas mais difíceis e as maiores batalhas do MCU.">
+    <meta property="og:image" content="img/banner.jpg">
+    <title>Vingadores | Galeria & Universo Marvel</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="css/estilo.css">
-    <title>Document</title>
 </head>
 <body>
-    <div class="start">
-        <header>
-            <a href="#" class="logo">
-                <img src="img/avengers-logo.png" alt="Logo dos Vingadores">
-            </a>
-            <nav>
-                <ul>
-                    <li><a href="#">Galeria</a></li>
-                    <li><a href="#">Noticias</a></li>
-                    <li><a href="#">Videos</a></li>
-                    <li><a href="#">Informações</a></li>
-                </ul>
-            </nav>
+    <div class="site-wrapper">
+        <header class="main-header" id="topo">
+            <div class="header-container">
+                <a href="#topo" class="logo" aria-label="Página Inicial dos Vingadores">
+                    <img src="img/avengers-logo.png" alt="Logo dos Vingadores">
+                </a>
 
+                <button class="mobile-menu-toggle" id="mobileMenuBtn" aria-label="Abrir Menu de Navegação">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <nav class="main-nav" id="mainNav">
+                    <ul>
+                        <li><a href="#galeria" class="nav-link"><i class="fas fa-images"></i> Galeria</a></li>
+                        <li><a href="#noticias" class="nav-link"><i class="fas fa-newspaper"></i> Notícias</a></li>
+                        <li><a href="#videos" class="nav-link"><i class="fas fa-play-circle"></i> Vídeos</a></li>
+                        <li><a href="#informacoes" class="nav-link"><i class="fas fa-info-circle"></i> Informações</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
-        <section class="banner">
-            <h1>As Escolhas Mais Dificeis Requerem as Vontades Mais Fortes.</h1>
+
+        <section class="hero-banner">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <span class="hero-badge"><i class="fas fa-shield-alt"></i> Iniciativa Vingadores</span>
+                <h1 class="hero-title">As Escolhas Mais Difíceis Requerem as Vontades Mais Fortes</h1>
+                <p class="hero-subtitle">Quando a Terra ou o próprio Universo enfrentam ameaças além da capacidade da humanidade, os maiores heróis se unem para lutar as batalhas que ninguém mais poderia.</p>
+                
+                <div class="hero-actions">
+                    <a href="#galeria" class="btn btn-primary"><i class="fas fa-photo-film"></i> Explorar Galeria</a>
+                    <a href="#noticias" class="btn btn-secondary"><i class="fas fa-newspaper"></i> Ver Notícias</a>
+                </div>
+            </div>
         </section>
-        <section class="galeria">
-            <figure>
-                <img src="img/avengers-01.jpg" alt="Destruição">
-                <figcaption>Destruição</figcaption>
-            </figure>
-            <figure>
-                <img src="img/avengers-02.jpg" alt="Destruição">
-                <figcaption>Destruição</figcaption>
-            </figure>
-            <figure>
-                <img src="img/avengers-03.jpg" alt="Destruição">
-                <figcaption>Destruição</figcaption>
-            </figure>
-            <figure>
-                <img src="img/avengers-04.jpg" alt="Destruição">
-                <figcaption>Destruição</figcaption>
-            </figure>
-            <figure>
-                <img src="img/avengers-05.jpg" alt="Destruição">
-                <figcaption>Destruição</figcaption>
-            </figure>
-            <figure>
-                <img src="img/avengers-06.jpg" alt="Destruição">
-                <figcaption>Destruição</figcaption>
-            </figure>
+
+        <section class="stats-bar">
+            <div class="stat-item">
+                <span class="stat-number">6</span>
+                <span class="stat-label">Joias do Infinito</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-number">30+</span>
+                <span class="stat-label">Heróis Reunidos</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-number">4</span>
+                <span class="stat-label">Fases Cinematográficas</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Épico</span>
+            </div>
         </section>
-        <footer>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem esse nihil totam? Natus deserunt, modi placeat voluptatibus nam, sed nesciunt ad vero culpa excepturi eius. Voluptate animi illo accusamus ducimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis minus, ex, in voluptate quia aut qui suscipit a doloribus earum nostrum ad facilis veniam, facere inventore placeat iusto at ut?</p>
+
+        <section class="section-container" id="galeria">
+            <div class="section-header">
+                <h2 class="section-title">Galeria de Destaques</h2>
+                <div class="title-underline"></div>
+                <p class="section-description">Momentos marcantes, batalhas decisivas e registros icônicos dos Vingadores.</p>
+            </div>
+
+            <div class="galeria-grid">
+                <figure class="gallery-card" data-full-src="img/avengers-01.jpg" data-title="Batalha de Nova York" data-caption="O confronto que uniu os heróis mais poderosos da Terra contra o exército Chitauri.">
+                    <div class="gallery-image-wrapper">
+                        <img src="img/avengers-01.jpg" alt="Vingadores na Batalha de Nova York" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span class="btn-zoom"><i class="fas fa-search-plus"></i> Ampliar</span>
+                        </div>
+                        <span class="card-tag">Fase 1</span>
+                    </div>
+                    <figcaption>
+                        <h3>Batalha de Nova York</h3>
+                        <p>O momento histórico onde os Vingadores se formaram pela primeira vez.</p>
+                    </figcaption>
+                </figure>
+
+                <figure class="gallery-card" data-full-src="img/avengers-02.jpg" data-title="A Queda de Sokovia" data-caption="A épica batalha contra a inteligência artificial Ultron para salvar a humanidade.">
+                    <div class="gallery-image-wrapper">
+                        <img src="img/avengers-02.jpg" alt="Vingadores em Era de Ultron" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span class="btn-zoom"><i class="fas fa-search-plus"></i> Ampliar</span>
+                        </div>
+                        <span class="card-tag">Fase 2</span>
+                    </div>
+                    <figcaption>
+                        <h3>Era de Ultron</h3>
+                        <p>A união necessária para conter a ameaça que eles mesmos ajudaram a criar.</p>
+                    </figcaption>
+                </figure>
+
+                <figure class="gallery-card" data-full-src="img/avengers-03.jpg" data-title="Guerra Civil" data-caption="Convicções opostas colocam Capitão América e Homem de Ferro em lados diferentes.">
+                    <div class="gallery-image-wrapper">
+                        <img src="img/avengers-03.jpg" alt="Divisão dos heróis na Guerra Civil" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span class="btn-zoom"><i class="fas fa-search-plus"></i> Ampliar</span>
+                        </div>
+                        <span class="card-tag">Fase 3</span>
+                    </div>
+                    <figcaption>
+                        <h3>Guerra Civil</h3>
+                        <p>A fratura entre irmãos de batalha sobre a supervisão governamental.</p>
+                    </figcaption>
+                </figure>
+
+                <figure class="gallery-card" data-full-src="img/avengers-04.jpg" data-title="Guerra Infinita" data-caption="O Titã Louco Thanos inicia sua busca implacável por todas as Joias do Infinito.">
+                    <div class="gallery-image-wrapper">
+                        <img src="img/avengers-04.jpg" alt="Confronto em Guerra Infinita" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span class="btn-zoom"><i class="fas fa-search-plus"></i> Ampliar</span>
+                        </div>
+                        <span class="card-tag">Guerra Infinita</span>
+                    </div>
+                    <figcaption>
+                        <h3>Guerra Infinita</h3>
+                        <p>A maior reunião de heróis do cosmos contra uma força avassaladora.</p>
+                    </figcaption>
+                </figure>
+
+                <figure class="gallery-card" data-full-src="img/avengers-05.jpg" data-title="A Batalha da Terra" data-caption="O clímax épico com todos os heróis restaurados para o confronto definitivo.">
+                    <div class="gallery-image-wrapper">
+                        <img src="img/avengers-05.jpg" alt="Batalha final em Vingadores Ultimato" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span class="btn-zoom"><i class="fas fa-search-plus"></i> Ampliar</span>
+                        </div>
+                        <span class="card-tag">Ultimato</span>
+                    </div>
+                    <figcaption>
+                        <h3>Vingadores, Avante!</h3>
+                        <p>O grito de guerra que definiu o destino de todo o universo.</p>
+                    </figcaption>
+                </figure>
+
+                <figure class="gallery-card" data-full-src="img/avengers-06.jpg" data-title="O Legado dos Heróis" data-caption="O impacto eterno e as novas gerações inspiradas pelo heroísmo dos Vingadores.">
+                    <div class="gallery-image-wrapper">
+                        <img src="img/avengers-06.jpg" alt="Legado e triunfo dos heróis" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span class="btn-zoom"><i class="fas fa-search-plus"></i> Ampliar</span>
+                        </div>
+                        <span class="card-tag">Legado</span>
+                    </div>
+                    <figcaption>
+                        <h3>O Legado Eterno</h3>
+                        <p>Uma homenagem ao sacrifício e à determinação que salvaram o cosmos.</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="section-container section-dark" id="noticias">
+            <div class="section-header">
+                <h2 class="section-title">Últimas Notícias</h2>
+                <div class="title-underline"></div>
+                <p class="section-description">Acompanhe as atualizações mais recentes do universo Marvel.</p>
+            </div>
+
+            <div class="noticias-grid">
+                <article class="noticia-card">
+                    <div class="noticia-badge"><i class="fas fa-bolt"></i> Destaque</div>
+                    <div class="noticia-body">
+                        <span class="noticia-date"><i class="far fa-calendar-alt"></i> Setembro, 2026</span>
+                        <h3 class="noticia-title">A Nova Formação dos Vingadores nas Próximas Fases</h3>
+                        <p class="noticia-summary">Rumores apontam novos líderes e alianças multiversais para combater ameaças cósmicas emergentes.</p>
+                        <a href="#noticias" class="noticia-link">Ler mais <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="noticia-card">
+                    <div class="noticia-badge"><i class="fas fa-film"></i> Cinema</div>
+                    <div class="noticia-body">
+                        <span class="noticia-date"><i class="far fa-calendar-alt"></i> Agosto, 2026</span>
+                        <h3 class="noticia-title">Bastidores: Como Foi Criada a Cena de 'Avengers Assemble'</h3>
+                        <p class="noticia-summary">Diretores e equipe de efeitos visuais revelam os segredos por trás da cena mais icônica da história dos quadrinhos no cinema.</p>
+                        <a href="#noticias" class="noticia-link">Ler mais <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="noticia-card">
+                    <div class="noticia-badge"><i class="fas fa-star"></i> Especial</div>
+                    <div class="noticia-body">
+                        <span class="noticia-date"><i class="far fa-calendar-alt"></i> Julho, 2026</span>
+                        <h3 class="noticia-title">A Ciência por Trás das Joias do Infinito</h3>
+                        <p class="noticia-summary">Uma análise aprofundada sobre cada uma das seis singularidades cósmicas que controlam o tecido da realidade.</p>
+                        <a href="#noticias" class="noticia-link">Ler mais <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section-container" id="videos">
+            <div class="section-header">
+                <h2 class="section-title">Vídeos & Destaques</h2>
+                <div class="title-underline"></div>
+                <p class="section-description">Reveja os momentos mais emocionantes e os trailers históricos.</p>
+            </div>
+
+            <div class="video-showcase">
+                <div class="video-card main-video">
+                    <div class="video-thumbnail">
+                        <img src="img/banner.jpg" alt="Cena épica dos Vingadores">
+                        <div class="play-button" role="button" aria-label="Assistir Vídeo">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Vingadores: A Batalha Definitiva</h3>
+                        <p>O trailer e os melhores momentos que marcaram a conclusão de uma saga inesquecível de 10 anos no cinema.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-container section-dark" id="informacoes">
+            <div class="section-header">
+                <h2 class="section-title">Sobre a Iniciativa Vingadores</h2>
+                <div class="title-underline"></div>
+                <p class="section-description">A história por trás do grupo mais poderoso do universo.</p>
+            </div>
+
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="info-icon"><i class="fas fa-bullseye"></i></div>
+                    <h3>A Missão</h3>
+                    <p>Reunir um grupo de indivíduos extraordinários para ver se eles poderiam se tornar algo mais e lutar as batalhas impossíveis.</p>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon"><i class="fas fa-users"></i></div>
+                    <h3>Os Membros Fundadores</h3>
+                    <p>Homem de Ferro, Capitão América, Thor, Hulk, Viúva Negra e Gavião Arqueiro estabeleceram o alicerce heroico de esperança.</p>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon"><i class="fas fa-globe-americas"></i></div>
+                    <h3>Impacto Global</h3>
+                    <p>Mais do que uma equipe de super-heróis, os Vingadores se tornaram um símbolo universal de união, coragem e perseverança.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="main-footer">
+            <div class="footer-container">
+                <div class="footer-brand">
+                    <img src="img/avengers-logo.png" alt="Logo Vingadores" class="footer-logo">
+                    <p>Iniciativa Vingadores: Protegendo o mundo contra as maiores ameaças cósmicas e terrenas.</p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Navegação Rápida</h4>
+                    <ul>
+                        <li><a href="#galeria"><i class="fas fa-chevron-right"></i> Galeria</a></li>
+                        <li><a href="#noticias"><i class="fas fa-chevron-right"></i> Notícias</a></li>
+                        <li><a href="#videos"><i class="fas fa-chevron-right"></i> Vídeos</a></li>
+                        <li><a href="#informacoes"><i class="fas fa-chevron-right"></i> Informações</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-social">
+                    <h4>Conecte-se</h4>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Twitter / X"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Fan-page Vingadores. Todos os direitos reservados aos criadores e à Marvel Studios.</p>
+            </div>
         </footer>
     </div>
-    
+
+    <div class="lightbox-modal" id="imageModal" aria-hidden="true" role="dialog">
+        <div class="lightbox-overlay" id="lightboxOverlay"></div>
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="lightboxClose" aria-label="Fechar visualizador">
+                <i class="fas fa-times"></i>
+            </button>
+            <img src="" alt="" class="lightbox-image" id="lightboxImg">
+            <div class="lightbox-caption">
+                <h3 id="lightboxTitle">Título da Imagem</h3>
+                <p id="lightboxDesc">Descrição da imagem.</p>
+            </div>
+        </div>
+    </div>
+
+    <button class="back-to-top" id="backToTopBtn" aria-label="Voltar ao Topo">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
